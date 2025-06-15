@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabinet ABAQ - Maîtrise d'œuvre et BET Thermique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-yellow': '#F9C934',
+                        'secondary-dark': '#333333',
+                        'secondary-gray': '#4A4A4A',
+                        'secondary-light': '#F5F5F5',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/" class="flex items-center space-x-3">
+                    <img src="./logo.png" alt="Cabinet ABAQ Logo" class="h-10 w-auto max-w-[200px] object-contain" style="max-height: 40px;">
+                    <span class="text-xl font-semibold text-secondary-dark">Cabinet ABAQ</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-secondary-gray hover:text-primary-yellow transition-colors">Accueil</a>
+                    <a href="#" class="text-secondary-gray hover:text-primary-yellow transition-colors">Services</a>
+                    <a href="#" class="text-secondary-gray hover:text-primary-yellow transition-colors">Certifications</a>
+                    <a href="#" class="text-secondary-gray hover:text-primary-yellow transition-colors">Réalisations</a>
+                    <a href="#" class="text-secondary-gray hover:text-primary-yellow transition-colors">Actualités</a>
+                    <a href="#" class="text-secondary-gray hover:text-primary-yellow transition-colors">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-b from-primary-yellow/10 to-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-secondary-dark mb-6">Cabinet ABAQ</h1>
+            <p class="text-xl md:text-2xl text-secondary-gray mb-8">Expertise en Maîtrise d'œuvre et Études Thermiques</p>
+            <a href="#contact" class="inline-block bg-primary-yellow hover:bg-primary-yellow/90 text-secondary-dark font-semibold py-3 px-8 rounded-lg transition-colors">Demander un devis</a>
+        </div>
+    </section>
+
+    <!-- Logo Test Section -->
+    <section class="py-8 bg-red-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-4">Test d'affichage du logo</h2>
+            <p>Votre logo doit apparaître ci-dessous :</p>
+            <img src="./logo.png" alt="Cabinet ABAQ Logo" class="mx-auto my-4" style="height: 100px; border: 2px solid red;">
+            <p class="text-sm text-gray-600">Si vous ne voyez pas le logo, vérifiez le chemin du fichier.</p>
+        </div>
+    </section>
+
+    <script>
+        console.log('Testing logo load...');
+        const img = new Image();
+        img.onload = () => console.log('✅ Logo loaded successfully');
+        img.onerror = () => console.error('❌ Logo failed to load');
+        img.src = './logo.png';
+    </script>
+</body>
+</html>
