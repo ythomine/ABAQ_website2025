@@ -1,0 +1,23 @@
+[
+  {
+    "id": "opqibi",
+    "name": "OPQIBI",
+    "description": "Bureau d'études qualifié",
+    "validUntil": "2025-12-31",
+    "number": "À renseigner"
+  },
+  {
+    "id": "amiante",
+    "name": "Certification Amiante",
+    "description": "Repérage et diagnostic amiante",
+    "validUntil": "2025-12-31",
+    "number": "À renseigner"
+  },
+  {
+    "id": "rge",
+    "name": "RGE",
+    "description": "Reconnu Garant Environnement",
+    "validUntil": "2025-12-31",
+    "number": "À renseigner"
+  }
+]
